@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/budget-react-practices/static/css/main.61c744dc.chunk.css",
-    "main.js": "/budget-react-practices/static/js/main.a24d9d77.chunk.js",
-    "main.js.map": "/budget-react-practices/static/js/main.a24d9d77.chunk.js.map",
+    "main.js": "/budget-react-practices/static/js/main.1c0c5303.chunk.js",
+    "main.js.map": "/budget-react-practices/static/js/main.1c0c5303.chunk.js.map",
     "runtime-main.js": "/budget-react-practices/static/js/runtime-main.f849758a.js",
     "runtime-main.js.map": "/budget-react-practices/static/js/runtime-main.f849758a.js.map",
-    "static/js/2.bd931e0c.chunk.js": "/budget-react-practices/static/js/2.bd931e0c.chunk.js",
-    "static/js/2.bd931e0c.chunk.js.map": "/budget-react-practices/static/js/2.bd931e0c.chunk.js.map",
+    "static/js/2.5261f713.chunk.js": "/budget-react-practices/static/js/2.5261f713.chunk.js",
+    "static/js/2.5261f713.chunk.js.map": "/budget-react-practices/static/js/2.5261f713.chunk.js.map",
     "index.html": "/budget-react-practices/index.html",
-    "precache-manifest.92796097165566c1139f2701a3819d77.js": "/budget-react-practices/precache-manifest.92796097165566c1139f2701a3819d77.js",
+    "precache-manifest.0cde013abce47f0f5b9601122d4b9d59.js": "/budget-react-practices/precache-manifest.0cde013abce47f0f5b9601122d4b9d59.js",
     "service-worker.js": "/budget-react-practices/service-worker.js",
     "static/css/main.61c744dc.chunk.css.map": "/budget-react-practices/static/css/main.61c744dc.chunk.css.map",
-    "static/js/2.bd931e0c.chunk.js.LICENSE": "/budget-react-practices/static/js/2.bd931e0c.chunk.js.LICENSE"
+    "static/js/2.5261f713.chunk.js.LICENSE": "/budget-react-practices/static/js/2.5261f713.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.f849758a.js",
-    "static/js/2.bd931e0c.chunk.js",
+    "static/js/2.5261f713.chunk.js",
     "static/css/main.61c744dc.chunk.css",
-    "static/js/main.a24d9d77.chunk.js"
+    "static/js/main.1c0c5303.chunk.js"
   ]
 }
