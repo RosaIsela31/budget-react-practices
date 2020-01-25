@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3fd5a4ac72932a0dd7643cfee9c9442c",
+    "revision": "78d95bc26e276954f4d238ad8fd15467",
     "url": "/budget-react-practices/index.html"
   },
   {
-    "revision": "069f65bf1e48a325383d",
+    "revision": "74c3e6c98f44e6932997",
     "url": "/budget-react-practices/static/css/main.61c744dc.chunk.css"
   },
   {
-    "revision": "1aebdd49fba0906bdfaf",
-    "url": "/budget-react-practices/static/js/2.5261f713.chunk.js"
+    "revision": "ca090fc7f8325ab2dbd7",
+    "url": "/budget-react-practices/static/js/2.b45f7ab8.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/budget-react-practices/static/js/2.5261f713.chunk.js.LICENSE"
+    "url": "/budget-react-practices/static/js/2.b45f7ab8.chunk.js.LICENSE"
   },
   {
-    "revision": "069f65bf1e48a325383d",
-    "url": "/budget-react-practices/static/js/main.1c0c5303.chunk.js"
+    "revision": "74c3e6c98f44e6932997",
+    "url": "/budget-react-practices/static/js/main.cc12b4ed.chunk.js"
   },
   {
     "revision": "9c04042d36f4f6a5781a",
