@@ -1,12 +1,13 @@
 import React from 'react';
-import './index.css';
+import { BrowserRouter, Route } from "react-router-dom";
 import AppContainer from './components/AppContainer';
+import './index.css';
 
 function App() {
   return (
-    <div>
-      <AppContainer />
-    </div>
+    <BrowserRouter>
+      <Route path='/' component={AppContainer} />
+    </BrowserRouter>
   );
 }
 
