@@ -9,24 +9,34 @@ function AppContainer() {
 
   const [ budget, setBudget ] = useState(0);
   const [ remaining, setRemaining ] = useState(0);
+  const [ showquestion, setShowquestion ] = useState(true);
 
   return (
     <div className="container">
       <header>
           <h1>Gasto Semanal</h1>
         <div className='contenido-principal contenido'>
-          <Question 
-            setBudget={setBudget}
-            setRemaining={setRemaining}
-          />
-          <div className='row'>
-            <div className='one-half column'>
-              <Form />
-            </div>
-            <div className='one-half column'>
-             2
-            </div>
-          </div>
+        {showquestion 
+          ? 
+            (
+              <Question 
+                setBudget={setBudget}
+                setRemaining={setRemaining}
+                setShowquestion={setShowquestion}
+              />
+            )
+          : 
+            (
+              <div className='row'>
+                <div className='one-half column'>
+                  <Form />
+                </div>
+                <div className='one-half column'>
+                2
+                </div>
+              </div>
+            )
+        }
         </div>
       </header>
     </div>
