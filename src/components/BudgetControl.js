@@ -7,7 +7,7 @@ const BudgetControl = ({ budget, remainig }) => {
       <div className='alert alert-primary'>
         Presupuesto: $ {budget}
       </div>
-      <div className='alert'>
+      <div>
         Restante: $ {remainig}
       </div>
     </Fragment>
