@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Error from './Error';
 import shortid from 'shortid';
 
-const Form = ({ addNewPayment }) => {
+const Form = ({ setPayment, setCreatePayment }) => {
   const [ name, setName ] = useState('');
   const [ expense, setExpense ] = useState(0);
   const [ error, setError ] = useState(false);
@@ -28,7 +28,8 @@ const Form = ({ addNewPayment }) => {
     console.log(expenses);
     
     // Pasar el gasto al componente principal
-    addNewPayment(expenses)
+    setPayment(expenses)
+    setCreatePayment(true)
 
     // Resetear el form
     setName('')

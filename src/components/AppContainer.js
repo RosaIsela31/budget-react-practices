@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Question from './Question';
 import Form from './Form';
 import List from '../components/List'
+import BudgetControl from './BudgetControl'
 import '../index.css';
 
 
@@ -12,14 +13,31 @@ function AppContainer() {
   const [ remaining, setRemaining ] = useState(0);
   const [ showquestion, setShowquestion ] = useState(true);
   const [ payments, setPayments ] = useState([]);
+  const [ payment, setPayment ] = useState({});
+  const [ createPaymet, setCreatePayment ] = useState(false);
 
-  // Cuando agreguemos un nuevo gasto
-  const addNewPayment = gasto => {
-    setPayments([
-      ...payments,
-      gasto
-    ])    
-  }
+  // useEffect que actualiza el restante 
+  useEffect(() => { 
+    if(createPaymet){
+
+      // Agrega el nuevo presupuesto
+      setPayments([
+        ...payments,
+        payment
+      ])   
+
+      // Resta del presupuesto actual
+      const paymentRest = remaining - payment.expense;
+      setRemaining(paymentRest)
+      console.log(paymentRest);
+      
+
+      // Resetear a false 
+      setCreatePayment(false)
+    } 
+  }, [payment]);
+
+
 
   return (
     <div className="container">
@@ -40,12 +58,17 @@ function AppContainer() {
               <div className='row'>
                 <div className='one-half column'>
                   <Form
-                    addNewPayment={addNewPayment}
+                    setPayment={setPayment}
+                    setCreatePayment={setCreatePayment}
                   />
                 </div>
                 <div className='one-half column'>
                   <List 
                     payments={payments}
+                  />
+                  <BudgetControl 
+                    budget={budget}
+                    remaining={remaining}
                   />
                 </div>
               </div>
