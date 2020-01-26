@@ -1,14 +1,15 @@
 import React, { Fragment } from 'react';
+import { checkBudget } from '../helper';
 import '../index.css'
 
-const BudgetControl = ({ budget, remainig }) => {
+const BudgetControl = ({ budget, remaining }) => {
   return ( 
     <Fragment>
       <div className='alert alert-primary'>
         Presupuesto: $ {budget}
       </div>
-      <div>
-        Restante: $ {remainig}
+      <div className={checkBudget(budget, remaining)}>
+        Restante: $ {remaining}
       </div>
     </Fragment>
    );
