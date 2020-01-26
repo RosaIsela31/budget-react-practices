@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Error from './Error';
+import shortid from 'shortid';
 
-const Form = () => {
+const Form = ({ addNewPayment }) => {
   const [ name, setName ] = useState('');
   const [ expense, setExpense ] = useState(0);
   const [ error, setError ] = useState(false);
@@ -19,8 +20,19 @@ const Form = () => {
     setError(false)
 
     // Construir el gasto 
+    const expenses = {
+      name,
+      expense,
+      id: shortid.generate()
+    }
+    console.log(expenses);
+    
     // Pasar el gasto al componente principal
+    addNewPayment(expenses)
+
     // Resetear el form
+    setName('')
+    setExpense(0)
   }
 
   return ( 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Question from './Question';
 import Form from './Form';
+import List from '../components/List'
 import '../index.css';
 
 
@@ -10,6 +11,15 @@ function AppContainer() {
   const [ budget, setBudget ] = useState(0);
   const [ remaining, setRemaining ] = useState(0);
   const [ showquestion, setShowquestion ] = useState(true);
+  const [ payments, setPayments ] = useState([]);
+
+  // Cuando agreguemos un nuevo gasto
+  const addNewPayment = gasto => {
+    setPayments([
+      ...payments,
+      gasto
+    ])    
+  }
 
   return (
     <div className="container">
@@ -29,10 +39,14 @@ function AppContainer() {
             (
               <div className='row'>
                 <div className='one-half column'>
-                  <Form />
+                  <Form
+                    addNewPayment={addNewPayment}
+                  />
                 </div>
                 <div className='one-half column'>
-                2
+                  <List 
+                    payments={payments}
+                  />
                 </div>
               </div>
             )
