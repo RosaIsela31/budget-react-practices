@@ -14,11 +14,11 @@ function AppContainer() {
   const [ showquestion, setShowquestion ] = useState(true);
   const [ payments, setPayments ] = useState([]);
   const [ payment, setPayment ] = useState({});
-  const [ createPaymet, setCreatePayment ] = useState(false);
+  const [ createPayment, setCreatePayment ] = useState(false);
 
   // useEffect que actualiza el restante 
   useEffect(() => { 
-    if(createPaymet){
+    if(createPayment){
 
       // Agrega el nuevo presupuesto
       setPayments([
@@ -29,7 +29,7 @@ function AppContainer() {
       // Resta del presupuesto actual
       const paymentRest = remaining - payment.expense;
       setRemaining(paymentRest)
-      console.log(paymentRest);
+      console.log(remaining);
       
 
       // Resetear a false 
