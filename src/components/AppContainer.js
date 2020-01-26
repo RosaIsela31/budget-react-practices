@@ -35,7 +35,7 @@ function AppContainer() {
       // Resetear a false 
       setCreatePayment(false)
     } 
-  }, [payment]);
+  }, [payment, createPayment, payments, remaining ]);
 
 
 

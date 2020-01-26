@@ -1,5 +1,6 @@
-import React from 'react'
-import '../index.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../index.css';
 
 const Payment = ({ payment }) => {
   return ( 
@@ -14,4 +15,8 @@ const Payment = ({ payment }) => {
    );
 }
  
+Payment.propTypes = {
+  payment: PropTypes.object.isRequired
+}
+
 export default Payment;
