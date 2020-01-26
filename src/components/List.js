@@ -1,5 +1,6 @@
 import React from 'react';
-import Payment from './Payment'
+import Payment from './Payment';
+import PropTypes from 'prop-types';
 import '../index.css'
 
 const List = ({ payments }) => {
@@ -14,6 +15,10 @@ const List = ({ payments }) => {
       ))}
     </div>
    );
+}
+
+List.propTypes = {
+   payments: PropTypes.array.isRequired
 }
  
 export default List;
