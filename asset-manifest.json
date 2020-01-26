@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/budget-react-practices/static/css/main.61c744dc.chunk.css",
-    "main.js": "/budget-react-practices/static/js/main.bcfd6310.chunk.js",
-    "main.js.map": "/budget-react-practices/static/js/main.bcfd6310.chunk.js.map",
+    "main.js": "/budget-react-practices/static/js/main.d79ccb06.chunk.js",
+    "main.js.map": "/budget-react-practices/static/js/main.d79ccb06.chunk.js.map",
     "runtime-main.js": "/budget-react-practices/static/js/runtime-main.f849758a.js",
     "runtime-main.js.map": "/budget-react-practices/static/js/runtime-main.f849758a.js.map",
     "static/js/2.e05fabba.chunk.js": "/budget-react-practices/static/js/2.e05fabba.chunk.js",
     "static/js/2.e05fabba.chunk.js.map": "/budget-react-practices/static/js/2.e05fabba.chunk.js.map",
     "index.html": "/budget-react-practices/index.html",
-    "precache-manifest.e31f949a7bd6d930060550af728bcb71.js": "/budget-react-practices/precache-manifest.e31f949a7bd6d930060550af728bcb71.js",
+    "precache-manifest.a76ea200dfcf39b5e4bce1991546f9c9.js": "/budget-react-practices/precache-manifest.a76ea200dfcf39b5e4bce1991546f9c9.js",
     "service-worker.js": "/budget-react-practices/service-worker.js",
     "static/css/main.61c744dc.chunk.css.map": "/budget-react-practices/static/css/main.61c744dc.chunk.css.map",
     "static/js/2.e05fabba.chunk.js.LICENSE": "/budget-react-practices/static/js/2.e05fabba.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f849758a.js",
     "static/js/2.e05fabba.chunk.js",
     "static/css/main.61c744dc.chunk.css",
-    "static/js/main.bcfd6310.chunk.js"
+    "static/js/main.d79ccb06.chunk.js"
   ]
 }
